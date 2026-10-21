@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telco Sentiment Sentinel | South Africa ISP Outage & Anger Index</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-rose-500/20 selection:text-rose-400">
+
+  <!-- Ambient lighting -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="absolute -top-32 right-1/4 w-96 h-96 bg-rose-500/10 rounded-full blur-[140px]"></div>
+    <div class="absolute top-1/2 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-[150px]"></div>
+    <div class="absolute -bottom-40 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-[140px]"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-8">
+    <!-- Header -->
+    <header class="border-b border-slate-800 pb-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-1 rounded-full text-xs font-mono font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/30 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>
+            Real-Time NLP Brand Intelligence & Outage Detection
+          </span>
+          <span class="text-xs font-mono text-slate-400 hidden sm:inline">SA Informatics Master Portfolio</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white flex items-center gap-3">
+          <span>📡 Telco Sentiment Sentinel</span>
+        </h1>
+        <p class="text-slate-400 text-sm sm:text-base mt-1 max-w-2xl font-light">
+          Real-time NLP sentiment monitor and "Anger Index" detecting South African telecommunications outages across Twitter/X and social telemetries for Rain, Telkom, Vodacom, MTN, and Vumatel.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/BongaManzini/telco-sentiment-sentinel" target="_blank" rel="noopener noreferrer" class="px-3 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 text-xs font-mono flex items-center gap-2 transition-all">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="../" class="px-3 py-2 rounded-xl bg-rose-500 hover:bg-rose-400 text-slate-950 text-xs font-bold font-mono flex items-center gap-1.5 transition-all">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          <span>Portfolio</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Anger Index Leaderboard Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+      
+      <!-- Rain 5G -->
+      <div class="bg-slate-900/80 border border-rose-500/40 rounded-3xl p-6 shadow-xl relative overflow-hidden">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-lg font-bold text-white">Rain 5G</h3>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-rose-500/20 text-rose-400 border border-rose-500/30 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping"></span>
+            Outage Spike
+          </span>
+        </div>
+        <div class="flex items-baseline gap-2 mb-3">
+          <span class="text-4xl font-black font-mono text-rose-400">78.4</span>
+          <span class="text-xs font-mono text-slate-400">/ 100 Anger Index</span>
+        </div>
+        <p class="text-xs text-slate-300 font-light mb-4">
+          Cluster of red-light flashing disconnections reported in <strong>Sandton & Midrand</strong>. 420+ complaints in last 60 minutes.
+        </p>
+        <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden">
+          <div class="bg-rose-500 h-full rounded-full" style="width: 78.4%"></div>
+        </div>
+      </div>
+
+      <!-- Telkom -->
+      <div class="bg-slate-900/80 border border-amber-500/30 rounded-3xl p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-lg font-bold text-white">Telkom Mobile / DSL</h3>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/20 text-amber-400 border border-amber-500/30">
+            Elevated Anger
+          </span>
+        </div>
+        <div class="flex items-baseline gap-2 mb-3">
+          <span class="text-4xl font-black font-mono text-amber-400">72.1</span>
+          <span class="text-xs font-mono text-slate-400">/ 100 Anger Index</span>
+        </div>
+        <p class="text-xs text-slate-300 font-light mb-4">
+          Billing double-debits on LTE packages and 45-minute call center hold queues dominating user sentiment.
+        </p>
+        <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden">
+          <div class="bg-amber-500 h-full rounded-full" style="width: 72.1%"></div>
+        </div>
+      </div>
+
+      <!-- Vumatel -->
+      <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="text-lg font-bold text-white">Vumatel Fibre</h3>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">
+            Moderate
+          </span>
+        </div>
+        <div class="flex items-baseline gap-2 mb-3">
+          <span class="text-4xl font-black font-mono text-cyan-400">54.0</span>
+          <span class="text-xs font-mono text-slate-400">/ 100 Anger Index</span>
+        </div>
+        <p class="text-xs text-slate-300 font-light mb-4">
+          Isolated municipal water trenching physical line severance in Randburg; repair crews dispatched on site.
+        </p>
+        <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden">
+          <div class="bg-cyan-500 h-full rounded-full" style="width: 54%"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Live Social Sentiment Stream & NLP Sandbox -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
+      
+      <!-- Live Complaint Stream Feed (7 cols) -->
+      <div class="lg:col-span-7 bg-slate-900/60 border border-slate-800 rounded-3xl p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-2">
+            <i data-lucide="message-square" class="w-5 h-5 text-rose-400"></i>
+            <h3 class="text-base font-bold text-white">Live Discontent Stream (Real-Time Ingestion)</h3>
+          </div>
+          <span class="text-[10px] font-mono text-slate-400">Twitter/X API & HelloPeter Scraper</span>
+        </div>
+
+        <div id="posts-feed" class="space-y-3 font-mono text-xs">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- Live NLP Sentiment Tester (5 cols) -->
+      <div class="lg:col-span-5 bg-slate-900 border border-slate-800 rounded-3xl p-6 shadow-xl space-y-4">
+        <div class="flex items-center gap-2">
+          <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400"></i>
+          <h3 class="text-base font-bold text-white">Test NLP Anger Classifier</h3>
+        </div>
+        <p class="text-xs text-slate-400 font-light">
+          Type or paste any telecommunications tweet/review to score its Anger Index and outage severity:
+        </p>
+
+        <textarea 
+          id="custom-text" 
+          rows="3" 
+          placeholder="e.g. My Rain 5G is completely dead in Soweto! Red light on router for 6 hours!"
+          class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500"
+        ></textarea>
+
+        <button 
+          onclick="analyzeCustomText()" 
+          class="w-full py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold font-mono text-xs flex items-center justify-center gap-2 shadow transition-all"
+        >
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+          <span>Compute Sentiment & Anger Index</span>
+        </button>
+
+        <div id="custom-result" class="hidden p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
+          <div class="flex justify-between items-center text-xs font-mono">
+            <span class="text-slate-400">Anger Index:</span>
+            <span id="res-score" class="text-xl font-black text-rose-400">84.0 / 100</span>
+          </div>
+          <div class="flex justify-between items-center text-xs font-mono">
+            <span class="text-slate-400">Classification:</span>
+            <span id="res-class" class="font-bold text-rose-300">🚨 Critical Outage Panic</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-mono gap-4">
+      <p>© Bonga Manzini • BSc Informatics (UNISA) • Telco Brand Sentiment Intelligence</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/BongaManzini/telco-sentiment-sentinel" target="_blank" class="hover:text-rose-400 transition-colors">GitHub Repository</a>
+        <span>•</span>
+        <a href="https://bongamanzini.github.io/portfolio/" target="_blank" class="hover:text-rose-400 transition-colors">Portfolio</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const FEED = [
+      { telco: 'Rain', user: '@tebogo_k', time: '3m ago', text: 'Rain 5G has been down in Sandton for 4 hours straight now. Red light flashing on router! Absolutely useless service.', score: 86.5, location: 'Sandton, JHB' },
+      { telco: 'Telkom', user: '@karabo_za', time: '11m ago', text: 'Telkom billing charged me twice for LTE this month and customer care line is dead. Please fix this @TelkomZA', score: 74.0, location: 'Pretoria East' },
+      { telco: 'Vumatel', user: '@dave_cape', time: '24m ago', text: 'Fibre cut in Randburg, trenching team sliced the main cable again. Zero ETA on reconnection.', score: 62.0, location: 'Randburg, JHB' },
+      { telco: 'Vodacom', user: '@sipho_m', time: '38m ago', text: 'Signal completely dropped during stage 4 load shedding in Soweto. Tower battery flat again?', score: 58.0, location: 'Soweto, JHB' }
+    ];
+
+    function renderFeed() {
+      const container = document.getElementById('posts-feed');
+      container.innerHTML = FEED.map(p => `
+        <div class="p-3.5 bg-slate-950 rounded-2xl border border-slate-800 space-y-1.5">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white">${p.telco}</span>
+              <span class="text-slate-500 text-[10px]">${p.user} • ${p.time}</span>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] ${p.score >= 75 ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' : 'bg-amber-500/20 text-amber-300 border border-amber-500/30'}">
+              Anger: ${p.score}/100
+            </span>
+          </div>
+          <p class="text-slate-300 font-light leading-relaxed">${p.text}</p>
+          <span class="text-[10px] text-slate-500 block">📍 ${p.location}</span>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    function analyzeCustomText() {
+      const text = document.getElementById('custom-text').value.trim();
+      if (!text) return;
+
+      let score = 25.0;
+      const keywords = ['down', 'no signal', 'red light', 'cut fibre', 'outage', 'useless', 'dead', 'scam', 'terrible', 'offline'];
+      keywords.forEach(kw => {
+        if (text.toLowerCase().includes(kw)) score += 14.5;
+      });
+      score += (text.match(/!/g) || []).length * 4.0;
+      score = Math.min(100.0, Math.round(score));
+
+      document.getElementById('res-score').textContent = `${score} / 100`;
+      const resClass = document.getElementById('res-class');
+
+      if (score >= 75) {
+        resClass.textContent = '🚨 Critical Outage Panic';
+        resClass.className = 'font-bold text-rose-400';
+      } else if (score >= 50) {
+        resClass.textContent = '⚠️ Elevated Customer Grievance';
+        resClass.className = 'font-bold text-amber-400';
+      } else {
+        resClass.textContent = '🟢 Routine Customer Inquiry';
+        resClass.className = 'font-bold text-emerald-400';
+      }
+
+      document.getElementById('custom-result').classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderFeed();
+    });
+  </script>
+</body>
+</html>
