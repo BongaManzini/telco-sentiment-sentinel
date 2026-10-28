@@ -35,7 +35,7 @@
           <span class="text-xs font-mono text-slate-400 hidden sm:inline">SA Informatics Master Portfolio</span>
         </div>
         <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white flex items-center gap-3">
-          <span>📡 Telco Sentiment Sentinel</span>
+          <span> Telco Sentiment Sentinel</span>
         </h1>
         <p class="text-slate-400 text-sm sm:text-base mt-1 max-w-2xl font-light">
           Real-time NLP sentiment monitor and "Anger Index" detecting South African telecommunications outages across Twitter/X and social telemetries for Rain, Telkom, Vodacom, MTN, and Vumatel.
@@ -170,7 +170,7 @@
           </div>
           <div class="flex justify-between items-center text-xs font-mono">
             <span class="text-slate-400">Classification:</span>
-            <span id="res-class" class="font-bold text-rose-300">🚨 Critical Outage Panic</span>
+            <span id="res-class" class="font-bold text-rose-300"> Critical Outage Panic</span>
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@
             </span>
           </div>
           <p class="text-slate-300 font-light leading-relaxed">${p.text}</p>
-          <span class="text-[10px] text-slate-500 block">📍 ${p.location}</span>
+          <span class="text-[10px] text-slate-500 block"> ${p.location}</span>
         </div>
       `).join('');
       lucide.createIcons();
@@ -234,13 +234,13 @@
       const resClass = document.getElementById('res-class');
 
       if (score >= 75) {
-        resClass.textContent = '🚨 Critical Outage Panic';
+        resClass.textContent = ' Critical Outage Panic';
         resClass.className = 'font-bold text-rose-400';
       } else if (score >= 50) {
-        resClass.textContent = '⚠️ Elevated Customer Grievance';
+        resClass.textContent = '️ Elevated Customer Grievance';
         resClass.className = 'font-bold text-amber-400';
       } else {
-        resClass.textContent = '🟢 Routine Customer Inquiry';
+        resClass.textContent = ' Routine Customer Inquiry';
         resClass.className = 'font-bold text-emerald-400';
       }
 

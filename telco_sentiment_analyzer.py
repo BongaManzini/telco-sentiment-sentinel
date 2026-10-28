@@ -72,12 +72,12 @@ def evaluate_telco_sentiment() -> List[Dict]:
 
 def print_cli_summary():
     print("=" * 70)
-    print("📡 TELCO BRAND SENTIMENT SENTINEL: LIVE ANGER INDEX")
+    print(" TELCO BRAND SENTIMENT SENTINEL: LIVE ANGER INDEX")
     print("=" * 70)
     print(f"{'Provider':<16} | {'Anger Index':<12} | {'Outage Alert':<14} | {'Primary Issue'}")
     print("-" * 70)
     for b in evaluate_telco_sentiment():
-        alert = "🚨 CRITICAL OUTAGE" if b["outage_alert"] else "🟢 NORMAL"
+        alert = " CRITICAL OUTAGE" if b["outage_alert"] else " NORMAL"
         print(f"{b['name']:<16} | {b['anger_index']}/100    | {alert:<14} | {b['top_issue']}")
     print("=" * 70)
 

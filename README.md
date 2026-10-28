@@ -1,4 +1,4 @@
-# 📡 Telco Brand Sentiment Sentinel
+# Telco Brand Sentiment Sentinel
 
 > **Live Application**: [https://bongamanzini.github.io/telco-sentiment-sentinel/](https://bongamanzini.github.io/telco-sentiment-sentinel/)
 
@@ -6,7 +6,7 @@ A real-time natural language processing (NLP) sentiment monitor and "Anger Index
 
 ---
 
-## 🎯 The Informatics & Brand Reputation Angle
+## The Informatics & Brand Reputation Angle
 
 - **The Problem**: South African telecommunications operators and ISPs often fail to detect localised fiber cuts, 5G tower battery depletion during load shedding, and billing double-debits until thousands of angry customers flood support queues.
 - **The Informatics Solution**:
@@ -16,7 +16,7 @@ A real-time natural language processing (NLP) sentiment monitor and "Anger Index
 
 ---
 
-## 🛠️ Features
+## ️ Features
 
 - **Live Anger Index Leaderboard**: Continuously ranks ISPs by customer dissatisfaction and outage risk.
 - **Outage Cluster Detection**: Correlates geographic indicators (e.g. Sandton, Soweto, Randburg, Durban) with sudden spikes in network downtime tweets.
@@ -25,7 +25,7 @@ A real-time natural language processing (NLP) sentiment monitor and "Anger Index
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 
 - **NLP Engine**: Python 3, VADER, RegEx
 - **Frontend**: HTML5, Vanilla JavaScript (ESNext), Tailwind CSS
@@ -33,7 +33,7 @@ A real-time natural language processing (NLP) sentiment monitor and "Anger Index
 
 ---
 
-## 🚀 Quick Start (Python CLI)
+## Quick Start (Python CLI)
 
 ```bash
 # Run NLP sentiment analysis
@@ -42,8 +42,8 @@ python3 telco_sentiment_analyzer.py
 
 ---
 
-## 👨‍💻 Author
+## ‍ Author
 
-**Bonga Manzini**  
-BSc Informatics – University of South Africa (UNISA)  
+**Bonga Manzini** 
+BSc Informatics – University of South Africa (UNISA) 
 Portfolio: [https://bongamanzini.github.io/portfolio/](https://bongamanzini.github.io/portfolio/)
